@@ -109,6 +109,12 @@ namespace Exec2
 
             } while ((ch == 'y') || (ch == 'Y'));
         }
+        static void Main(string[] args)
+        {
+            Program mylist = new Program();
+            int pilihanmenu;
+            char ch;
+        }
     }
 }
 
