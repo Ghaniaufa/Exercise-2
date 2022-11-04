@@ -5,7 +5,7 @@ namespace Exec2
     class Program
     {
         //Array to be searched
-        int[] ghani = new int[116];
+        int[] mg = new int[116];
         //Number of elements in the array
         int n;
         //geet the number of elements to store in the array
@@ -34,12 +34,32 @@ namespace Exec2
             {
                 Console.Write("<" + (i + 1) + ">");
                 string s1 = Console.ReadLine();
-                ghani[i] = Int32.Parse(s1);
+                mg[i] = Int32.Parse(s1);
             }
 
         }
 
+        public void BinarySerch()
+        {
+            char ch;
+            do
+            {
+                //Accept the number to be searched
+                Console.Write("\n Masukan elemen yang mau kamu cari : ");
+                int item = Convert.ToInt32(Console.ReadLine());
 
+                //Apply binary search
+                int lowerbound = 0;
+                int upperbound = n - 1;
+
+                //Obtain the indext of the elements in the array 
+                int mid = upperbound + lowerbound) / 2;
+                int ctr = 1;
+
+                //Loop to search for the elements in the array
+                while ((item != mg))
+            }
+        }
 
     }
 }
