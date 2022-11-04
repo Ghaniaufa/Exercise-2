@@ -123,6 +123,16 @@ namespace Exec2
             Console.WriteLine(" Ketik pilihanmu (1,2,3) :");
             pilihanmenu = Convert.ToInt32(Console.ReadLine());
             switch (pilihanmenu)
+            {
+                case 1:
+                    Console.WriteLine("");
+                    Console.WriteLine("------------------");
+                    Console.WriteLine("Linear Search");
+                    Console.WriteLine("------------------");
+                    mylist.inputdata();
+                    mylist.LienarSearch();
+                    break;
+            }
         }
     }
 }
