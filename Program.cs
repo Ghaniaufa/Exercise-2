@@ -10,7 +10,8 @@ namespace Exec2
         int n;
         //geet the number of elements to store in the array
         int i;
-
+        private int cmp_count = 0;//Number of comparassion
+        private int mov_count = 0;//Number of data movements
         public void inputdata()
         {
             while (true)
@@ -79,7 +80,16 @@ namespace Exec2
 
             } while ((ch == 'y') || (ch == 'Y'));
         }
+        public void LienarSearch()
+        {
+            char ch;
+            //Search for number of comparisson
+            int ctr;
+            do
+            {
 
+            }
+        }
     }
 }
 
