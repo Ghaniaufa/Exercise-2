@@ -67,7 +67,17 @@ namespace Exec2
                     mg = (upperbound + lowerbound) / 2;
                     ctr++;
                 }
-            }
+                if (item == ghani[mg])
+                    Console.WriteLine("\n" + item.ToString() + "Terdapat di Posisi" + (mg + 1).ToString());
+                else
+                    Console.WriteLine("\n" + item.ToString() + "Tidak ada di dalam array\n");
+                Console.WriteLine("\n Nomor Perbadingan : " + ctr);
+
+                Console.Write("\n Lanjutkan mencari (y/n) : ");
+                ch = char.Parse(Console.ReadLine());
+                
+
+            } while ((ch == 'y') || (ch == 'Y'));
         }
 
     }
