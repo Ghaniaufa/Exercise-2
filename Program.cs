@@ -40,7 +40,7 @@ namespace Exec2
 
         }
 
-        public void BinarySerch()
+        public void BinarySearch()
         {
             char ch;
             do
@@ -80,7 +80,7 @@ namespace Exec2
 
             } while ((ch == 'y') || (ch == 'Y'));
         }
-        public void LienarSearch()
+        public void LinearSearch()
         {
             char ch;
             //Search for number of comparisson
@@ -130,7 +130,21 @@ namespace Exec2
                     Console.WriteLine("Linear Search");
                     Console.WriteLine("------------------");
                     mylist.inputdata();
-                    mylist.LienarSearch();
+                    mylist.LinearSearch();
+                    break;
+               case 2:
+                    Console.WriteLine("");
+                    Console.WriteLine("------------------");
+                    Console.WriteLine(" Binary Search");
+                    Console.WriteLine("------------------");
+                    mylist.inputdata();
+                    mylist.BinarySearch();
+                    break;
+                case 3:
+                    Console.WriteLine(" Exit ");
+                    break;
+                default:
+                    Console.WriteLine(" Error ");
                     break;
             }
         }
