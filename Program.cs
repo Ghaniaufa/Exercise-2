@@ -87,8 +87,27 @@ namespace Exec2
             int ctr;
             do
             {
+                //accept the number to be searched
+                Console.Write("\n Masuka elemen yang kamu cari: ");
+                int item = Convert.ToInt32(Console.ReadLine());
 
-            }
+                ctr = 0;
+                for (i = 0; i < n; i++)
+                {
+                    ctr++;
+                    if (ghani[i] == item)
+                    {
+                        Console.Write("\n" + item.ToString() + "Posisi Didapatkan" + (i + 1).ToString());
+                        break;
+                    }
+                }
+                if (i == n)
+                    Console.WriteLine("\n" + item.ToString() + "Not found in the array");
+                Console.WriteLine("\n Nomor untuk perbandingan : " + ctr);
+                Console.WriteLine("\n Lanjutkan mencari ? (y/n): ");
+                ch = char.Parse(Console.ReadLine());
+
+            } while ((ch == 'y') || (ch == 'Y'));
         }
     }
 }
