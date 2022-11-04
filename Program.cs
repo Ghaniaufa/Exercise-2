@@ -5,7 +5,7 @@ namespace Exec2
     class Program
     {
         //Array to be searched
-        int[] mg = new int[116];
+        int[] ghani = new int[116];
         //Number of elements in the array
         int n;
         //geet the number of elements to store in the array
@@ -34,7 +34,7 @@ namespace Exec2
             {
                 Console.Write("<" + (i + 1) + ">");
                 string s1 = Console.ReadLine();
-                mg[i] = Int32.Parse(s1);
+                ghani[i] = Int32.Parse(s1);
             }
 
         }
@@ -53,11 +53,20 @@ namespace Exec2
                 int upperbound = n - 1;
 
                 //Obtain the indext of the elements in the array 
-                int mid = upperbound + lowerbound) / 2;
+                int mg = (upperbound + lowerbound) / 2;
                 int ctr = 1;
 
                 //Loop to search for the elements in the array
-                while ((item != mg))
+                while ((item != ghani[mg]) && (lowerbound <= upperbound))
+                {
+                    if (item > ghani[mg])
+                        lowerbound = mg + 1;
+                    else
+                        upperbound = mg - 1;
+
+                    mg = (upperbound + lowerbound) / 2;
+                    ctr++;
+                }
             }
         }
 
